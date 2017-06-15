@@ -5,12 +5,13 @@
     "tasks": [
         {
             "taskName": "Build with g++ (Debug)",
-            "command": "g++",
             "isShellCommand": true,
             "windows": {
+                "command": "g++",
                 "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O0", "-std=c++17", "-g", "-o", "HelloWorldDebug.exe", "HelloWorld.cpp"]
             },
             "linux": {
+                "command": "g++-7",
                 "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O0", "-std=c++17", "-g", "-o", "HelloWorldDebug.out", "HelloWorld.cpp"]
             },
             "showOutput": "always",
@@ -18,12 +19,13 @@
         },
         {
             "taskName": "Build with g++ (Release)",
-            "command": "g++",
             "isShellCommand": true,
             "windows": {
+                "command": "g++",
                 "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O2", "-std=c++17", "-o", "HelloWorldRelease.exe", "HelloWorld.cpp"]
             },
             "linux":{
+                "command": "g++-7",
                 "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O2", "-std=c++17", "-o", "HelloWorldRelease.out", "HelloWorld.cpp"]
             },
             "showOutput": "always"
