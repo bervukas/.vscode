@@ -41,20 +41,6 @@
             "isShellCommand": true,
             "args": ["-std=c++1z", "-o1", "HelloWorld.cpp"],
             "showOutput": "always"
-        },
-        {
-            "taskName": "Build with Visual C++ (Debug)",
-            "command": "cl",
-            "isShellCommand": true,
-            "args": ["/WX", "-std=c++1z", "-g", "HelloWorld.cpp"],
-            "showOutput": "always"
-        },
-        {
-            "taskName": "Build with Visual C++ (Release)",
-            "command": "cl",
-            "isShellCommand": true,
-            "args": ["/WX", "-std=c++1z", "-g", "HelloWorld.cpp"],
-            "showOutput": "always"
         }
     ]
 }
