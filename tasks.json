@@ -1,0 +1,60 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "tasks": [
+        {
+            "taskName": "Build with g++ (Debug)",
+            "command": "g++",
+            "isShellCommand": true,
+            "windows": {
+                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O0", "-std=c++1z", "-g", "-o", "HelloWorldDebug.exe", "HelloWorld.cpp"]
+            },
+            "linux": {
+                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O0", "-std=c++1z", "-g", "-o", "HelloWorldDebug.out", "HelloWorld.cpp"]
+            },
+            "showOutput": "always",
+            "isBuildCommand": true
+        },
+        {
+            "taskName": "Build with g++ (Release)",
+            "command": "g++",
+            "isShellCommand": true,
+            "windows": {
+                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O2", "-std=c++1z", "-o", "HelloWorldRelease.exe", "HelloWorld.cpp"]
+            },
+            "linux":{
+                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O2", "-std=c++1z", "-o", "HelloWorldRelease.out", "HelloWorld.cpp"]
+            },
+            "showOutput": "always"
+        },
+        {
+            "taskName": "Build with Clang++ (Debug)",
+            "command": "clang++",
+            "isShellCommand": true,
+            "args": ["-std=c++1z", "-g", "HelloWorld.cpp"],
+            "showOutput": "always"
+        },
+        {
+            "taskName": "Build with Clang++ (Release)",
+            "command": "clang++",
+            "isShellCommand": true,
+            "args": ["-std=c++1z", "-o1", "HelloWorld.cpp"],
+            "showOutput": "always"
+        },
+        {
+            "taskName": "Build with Visual C++ (Debug)",
+            "command": "cl",
+            "isShellCommand": true,
+            "args": ["/WX", "-std=c++1z", "-g", "HelloWorld.cpp"],
+            "showOutput": "always"
+        },
+        {
+            "taskName": "Build with Visual C++ (Release)",
+            "command": "cl",
+            "isShellCommand": true,
+            "args": ["/WX", "-std=c++1z", "-g", "HelloWorld.cpp"],
+            "showOutput": "always"
+        }
+    ]
+}
