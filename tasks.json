@@ -8,11 +8,11 @@
             "isShellCommand": true,
             "windows": {
                 "command": "g++",
-                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O0", "-std=c++17", "-g", "-o", "HelloWorldDebug.exe", "HelloWorld.cpp"]
+                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O0", "-std=c++17", "-g", "-o", "HelloWorld.exe", "HelloWorld.cpp"]
             },
             "linux": {
                 "command": "g++-7",
-                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O0", "-std=c++17", "-g", "-o", "HelloWorldDebug.out", "HelloWorld.cpp"]
+                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O0", "-std=c++17", "-g", "-o", "HelloWorld.out", "HelloWorld.cpp"]
             },
             "showOutput": "always",
             "isBuildCommand": true
@@ -22,11 +22,11 @@
             "isShellCommand": true,
             "windows": {
                 "command": "g++",
-                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O2", "-std=c++17", "-o", "HelloWorldRelease.exe", "HelloWorld.cpp"]
+                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O2", "-std=c++17", "-o", "HelloWorld.exe", "HelloWorld.cpp"]
             },
             "linux":{
                 "command": "g++-7",
-                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O2", "-std=c++17", "-o", "HelloWorldRelease.out", "HelloWorld.cpp"]
+                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O2", "-std=c++17", "-o", "HelloWorld.out", "HelloWorld.cpp"]
             },
             "showOutput": "always"
         },
