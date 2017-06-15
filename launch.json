@@ -14,11 +14,11 @@
             "externalConsole": true,
             "MIMode": "gdb",
             "windows": {
-                "program": "${workspaceRoot}/a.exe",
+                "program": "${workspaceRoot}/HelloWorld.exe",
                 "miDebuggerPath": "gdb.exe"
             },
             "linux": {
-                "program": "${workspaceRoot}/a.out",
+                "program": "${workspaceRoot}/HelloWorld.out",
                 "miDebuggerPath": "gdb"
             },
             "setupCommands": [
