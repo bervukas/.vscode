@@ -8,10 +8,10 @@
             "command": "g++",
             "isShellCommand": true,
             "windows": {
-                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O0", "-std=c++1z", "-g", "-o", "HelloWorldDebug.exe", "HelloWorld.cpp"]
+                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O0", "-std=c++17", "-g", "-o", "HelloWorldDebug.exe", "HelloWorld.cpp"]
             },
             "linux": {
-                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O0", "-std=c++1z", "-g", "-o", "HelloWorldDebug.out", "HelloWorld.cpp"]
+                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O0", "-std=c++17", "-g", "-o", "HelloWorldDebug.out", "HelloWorld.cpp"]
             },
             "showOutput": "always",
             "isBuildCommand": true
@@ -21,10 +21,10 @@
             "command": "g++",
             "isShellCommand": true,
             "windows": {
-                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O2", "-std=c++1z", "-o", "HelloWorldRelease.exe", "HelloWorld.cpp"]
+                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O2", "-std=c++17", "-o", "HelloWorldRelease.exe", "HelloWorld.cpp"]
             },
             "linux":{
-                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O2", "-std=c++1z", "-o", "HelloWorldRelease.out", "HelloWorld.cpp"]
+                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O2", "-std=c++17", "-o", "HelloWorldRelease.out", "HelloWorld.cpp"]
             },
             "showOutput": "always"
         },
@@ -32,14 +32,14 @@
             "taskName": "Build with Clang++ (Debug)",
             "command": "clang++",
             "isShellCommand": true,
-            "args": ["-std=c++1z", "-g", "HelloWorld.cpp"],
+            "args": ["-std=c++17", "-g", "HelloWorld.cpp"],
             "showOutput": "always"
         },
         {
             "taskName": "Build with Clang++ (Release)",
             "command": "clang++",
             "isShellCommand": true,
-            "args": ["-std=c++1z", "-o1", "HelloWorld.cpp"],
+            "args": ["-std=c++17", "-o1", "HelloWorld.cpp"],
             "showOutput": "always"
         }
     ]
