@@ -8,11 +8,11 @@
             "isShellCommand": true,
             "windows": {
                 "command": "g++",
-                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O0", "-std=c++17", "-g", "-o", "HelloWorld.exe", "HelloWorld.cpp"]
+                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O0", "-std=c++2a", "-g", "HelloWorld.cpp"]
             },
             "linux": {
-                "command": "g++-7",
-                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O0", "-std=c++17", "-g", "-o", "HelloWorld.out", "HelloWorld.cpp"]
+                "command": "g++-8",
+                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O0", "-std=c++2a", "-g", "HelloWorld.cpp"]
             },
             "showOutput": "always",
             "isBuildCommand": true
@@ -22,11 +22,11 @@
             "isShellCommand": true,
             "windows": {
                 "command": "g++",
-                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O2", "-std=c++17", "-o", "HelloWorld.exe", "HelloWorld.cpp"]
+                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O2", "-std=c++2a", "HelloWorld.cpp"]
             },
             "linux":{
                 "command": "g++-7",
-                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O2", "-std=c++17", "-o", "HelloWorld.out", "HelloWorld.cpp"]
+                "args": ["-Wall", "-Wextra", "-pedantic-errors", "-O2", "-std=c++2a", "HelloWorld.cpp"]
             },
             "showOutput": "always"
         },
@@ -34,14 +34,14 @@
             "taskName": "Build with Clang++ (Debug)",
             "command": "clang++",
             "isShellCommand": true,
-            "args": ["-std=c++17", "-g", "HelloWorld.cpp"],
+            "args": ["-std=c++2a", "-g", "HelloWorld.cpp"],
             "showOutput": "always"
         },
         {
             "taskName": "Build with Clang++ (Release)",
             "command": "clang++",
             "isShellCommand": true,
-            "args": ["-std=c++17", "-o1", "HelloWorld.cpp"],
+            "args": ["-std=c++2a", "-o1", "HelloWorld.cpp"],
             "showOutput": "always"
         }
     ]
